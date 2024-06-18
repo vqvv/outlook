@@ -54,7 +54,7 @@ func checkDomain(email string) (bool, bool) {
 	}
 
 	cookies := "Your Cookies Here"
-  canary := "Your  Canary Thingy Here"
+        canary := "Your  Canary Thingy Here"
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
 	req.Header.Set("Canary", canary)
 	req.Header.Set("Cookie", cookies)
@@ -101,7 +101,7 @@ func main() {
 	}
 	defer availableFile.Close()
 
-	notAvailableFile, err := os.Create("not_available.txt")
+	notAvailableFile, err := os.Create("taken.txt")
 	if err != nil {
 		fmt.Printf("Error creating file: %v\n", err)
 		os.Exit(1)
